@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTIS 255 - Project - 2025</title>
+    <link rel="stylesheet" href="oyun2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <div id="kapak-sayfasi">
+      <h1>Project Members</h1>
+      <div class="ekip-konteyner">
+        <div class="uye-karti">
+          <img src="berat.jpeg" alt="Üye 1" />
+          <h3>Berat Dilek</h3>
+          <p>22302754</p>
+          <p>Section: 4</p>
+        </div>
+        <div class="uye-karti">
+          <img src="omer.jpeg" alt="Üye 2" />
+          <h3>Ömer Faruk Duyar</h3>
+          <p>22303274</p>
+          <p>Section: 1</p>
+        </div>
+        <div class="uye-karti">
+          <img src="WhatsApp Image 2025-12-31 at 15.14.07.jpeg" alt="Üye 3" />
+          <h3>Arda Özkan</h3>
+          <p>22201991</p>
+          <p>Section: 2</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="geri-sayim" class="gizli">
+      <span id="sayac-metni">3</span>
+    </div>
+
+    <div id="oyun-alani" class="gizli">
+      <div id="oyun-ici-mesaj">Tap the black tiles!</div>
+
+      <div class="ust-panel">
+        <div class="panel-oge">
+          <small>HI-SCORE</small>
+          <span id="en-yuksek-skor">0</span>
+        </div>
+        <div class="panel-oge">
+          <small>SCORE</small>
+          <span id="skor" style="color: #00ff00">0</span>
+        </div>
+        <div class="panel-oge">
+          <small>TIME</small>
+          <span id="zaman" style="color: red">10</span>
+        </div>
+      </div>
+
+      <div class="izgara-konteyner" id="izgara"></div>
+      <div class="alt-panel">
+        <div class="cubuk-cerceve">
+          <div id="puan-cubugu"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="oyun-sonu-mesaji" class="gizli">
+      <h1 id="sonuc-basligi">Time is up</h1>
+      <p class="yeniden-oyna">Press F5 to play again</p>
+    </div>
+
+    <script src="oyun2.js"></script>
+  </body>
+</html>
